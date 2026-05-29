@@ -72,15 +72,15 @@ function loadImg(src) {
 
 // Start loading
 for (let i = 0; i < 5; i++)
-  images.player.push(loadImg(`/assets/player_${i}.png`));
+  images.player.push(loadImg(`./assets/player_${i}.png`));
 for (let i = 0; i < 2; i++)
-  images.enemy.push(loadImg(`/assets/enemy_${i}.png`));
-images.bullet = loadImg("/assets/bullet.png");
+  images.enemy.push(loadImg(`./assets/enemy_${i}.png`));
+images.bullet = loadImg("./assets/bullet.png");
 for (let i = 0; i < 16; i++)
-  images.explode.push(loadImg(`/assets/explode_${i}.png`));
+  images.explode.push(loadImg(`./assets/explode_${i}.png`));
 for (let i = 0; i < 16; i++)
-  images.big_explode.push(loadImg(`/assets/big_explode_${i}.png`));
-images.bg = loadImg("/assets/Mountain.jpg");
+  images.big_explode.push(loadImg(`./assets/big_explode_${i}.png`));
+images.bg = loadImg("./assets/Mountain.jpg");
 
 // Game State
 let gameState = "title"; // title, playing, gameover
