@@ -80,7 +80,7 @@ for (let i = 0; i < 16; i++)
   images.explode.push(loadImg(`./assets/explode_${i}.png`));
 for (let i = 0; i < 16; i++)
   images.big_explode.push(loadImg(`./assets/big_explode_${i}.png`));
-images.bg = loadImg("./assets/Mountain.jpg");
+images.bg = loadImg("./assets/background.png");
 
 // Game State
 let gameState = "title"; // title, playing, gameover
