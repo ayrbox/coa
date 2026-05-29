@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chopper in Attack Web</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">Loading Assets...</div>
+    
+    <!-- Game UI Overlays -->
+    <div id="ui-layer">
+      <!-- Title Screen -->
+      <div id="title-screen" class="screen">
+        <h1>Chopper in Attack</h1>
+        <p>Press <strong>ENTER</strong> to Start</p>
+        <p class="controls">Movement: Arrow Keys | Shoot: Space</p>
+      </div>
+      
+      <!-- Game Over Screen -->
+      <div id="game-over-screen" class="screen hidden">
+        <h1>GAME OVER</h1>
+        <div class="stats">
+          <p id="stat-total">Total: 0</p>
+          <p id="stat-hit">Hit: 0</p>
+          <p id="stat-missed">Missed: 0</p>
+        </div>
+        <p>Press <strong>ENTER</strong> to Replay</p>
+        <p>Press <strong>ESC</strong> to Quit</p>
+      </div>
+    </div>
+    
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas"></canvas>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
